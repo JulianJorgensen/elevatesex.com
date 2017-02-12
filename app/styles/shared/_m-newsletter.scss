@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: $primary-color;
+  background-color: rgba($primary-color, 0.4);
   @include flex();
   @include flex-align(center);
 
@@ -11,13 +11,30 @@
     padding: rem-calc(10) 0;
     @include flex();
     input{
-      background-color: darken($primary-color, 30%);
+      background-color: $black;
       margin-bottom: 0;
       margin-right: rem-calc(15);
       border: 0;
+      color: $white;
       &:last-child{
         margin-right: 0;
       }
+      &[type="email"]{
+        width: rem-calc(200);
+      }
     }
+  }
+
+  #newsletter-error{
+    position: absolute;
+    top: rem-calc(-50);
+    background-color: $alert-color;
+    padding: rem-calc(4 10);
+    font-weight: bold;
+  }
+
+  .newsletter-confirmation{
+    background-color: $red !important;
+    padding: rem-calc(20) !important;
   }
 }

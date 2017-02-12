@@ -51,3 +51,41 @@ export var videoReducer = (state = {playVideo: false, loadingVideo: false}, acti
       return state;
   }
 };
+
+
+export var newsletterReducer = (state = {show: true, errors: false, subscribed: false, showInModal: false, showConfirmation: false}, action) => {
+  switch (action.type) {
+    case 'HIDE_NEWSLETTER':
+      return {
+        ...state,
+        show: false
+      };
+    case 'SHOW_NEWSLETTER':
+      return {
+        ...state,
+        show: true
+      };
+    case 'SHOW_CONFIRMATION':
+      return {
+        ...state,
+        showConfirmation: true
+      };
+    case 'HIDE_CONFIRMATION':
+      return {
+        ...state,
+        showConfirmation: false
+      };
+    case 'NEWSLETTER_SUBSCRIBED':
+      return {
+        ...state,
+        subscribed: true
+      };
+    case 'SHOW_NEWSLETTER_IN_MODAL':
+      return {
+        ...state,
+        showInModal: action.show
+      };
+    default:
+      return state;
+  }
+};

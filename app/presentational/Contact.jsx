@@ -12,12 +12,15 @@ class Contact extends React.Component{
 
   render() {
     return (
-      <section className="section">
-        <h1>Contact</h1>
-        <div className="container">
-          <ContactMethod />
-        </div>
-      </section>
+      <div>
+        <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/landing-bg.jpg)'}}></div></div>
+        <section className="section">
+          <h1>Contact</h1>
+          <div className="container">
+            <ContactMethod />
+          </div>
+        </section>
+      </div>
     )
   }
 }

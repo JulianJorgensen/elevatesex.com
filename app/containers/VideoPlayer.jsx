@@ -29,10 +29,14 @@ class VideoPlayer extends React.Component{
               let player = event.target;
               player.playVideo();
               dispatch(actions.createPlayer(player));
+              dispatch(actions.toggleNavIcon());
+              dispatch(actions.hideNewsletter());
             }}
             onPlay={(event)=>{
-              dispatch(actions.toggleNavIcon());
               dispatch(actions.playVideo());
+            }}
+            onEnd={()=>{
+              dispatch(actions.closeVideo());
             }}
           />
         </div>

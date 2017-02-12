@@ -7,9 +7,14 @@
   color: $white;
 }
 
+#section-landing-content{
+  text-align: center;
+}
+
 // watch now
 #player-watch{
   margin-top: rem-calc(25);
+  font-size: 1.7rem;
   .fa-play-circle{
     position: relative;
     bottom: -2px;

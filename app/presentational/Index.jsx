@@ -17,7 +17,7 @@ class Index extends React.Component{
       <div>
         <section className="section-landing">
           {/* newsletter signup */}
-          <div className="landing-content-wrapper">
+          <div id="section-landing-content">
             <h2>Experience sex on a whole new level</h2>
             <h3><i>for conscious couples</i></h3>
             <VideoPlayButton id="player-watch" />
@@ -31,8 +31,8 @@ class Index extends React.Component{
           </video>
 
           {/* Video Player */}
-          <VideoPlayer/>
-          <Newsletter/>
+          <VideoPlayer />
+          <Newsletter />
         </section>
 
         <section className="section">

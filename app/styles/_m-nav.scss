@@ -12,6 +12,7 @@
     color: $white;
     font-size: rem-calc(60);
     @include transition(all 0.2s);
+    z-index: 1000;
   }
   .site-nav{
     position: fixed;
@@ -95,7 +96,7 @@
   .site-logo, .site-nav{
     z-index: 100;
   }
-  .site-logo{
+  .site-logo .font-white{
     color: $black;
   }
   .site-nav .site-nav-icon span {

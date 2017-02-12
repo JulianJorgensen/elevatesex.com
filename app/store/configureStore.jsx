@@ -1,12 +1,13 @@
 import * as redux from 'redux';
 import thunk from 'redux-thunk';
 
-import {navReducer, videoReducer} from 'reducers';
+import {navReducer, videoReducer, newsletterReducer} from 'reducers';
 
 export let configure = (initialState = {}) => {
   var reducer = redux.combineReducers({
     nav: navReducer,
-    video: videoReducer
+    video: videoReducer,
+    newsletter: newsletterReducer
   });
 
   var store = redux.createStore(reducer, initialState, redux.compose(
