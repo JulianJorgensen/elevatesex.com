@@ -9,6 +9,7 @@
   background: rgba($black, 0.9);
 }
 .landing-video{
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -22,4 +23,8 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+
+  @include breakpoint(large){
+    display: block;
+  }
 }

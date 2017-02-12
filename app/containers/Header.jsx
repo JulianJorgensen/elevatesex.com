@@ -26,12 +26,15 @@ class Header extends React.Component {
         </div>
         <nav className="site-nav">
           <div className={`site-nav-icon ${nav.showClose ? 'open' : ''}`} onClick={this.toggleNav.bind(this)}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className="animated-bars">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <i className="fa fa-bars"></i>
           </div>
         </nav>
 
