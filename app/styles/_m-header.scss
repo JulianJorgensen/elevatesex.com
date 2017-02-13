@@ -15,7 +15,7 @@
   padding: rem-calc(5 10);
   @include transition(all 0.2s);
 
-  @include breakpoint(medium){
+  @include breakpoint(large){
     padding: rem-calc(0 15);
   }
 
@@ -26,7 +26,7 @@
     @include transition(all 0.2s);
     z-index: 1000;
 
-    @include breakpoint(medium){
+    @include breakpoint(large){
       font-size: rem-calc(60);
     }
   }
@@ -43,7 +43,7 @@
       .animated-bars{
         display: none;
       }
-      @include breakpoint(medium){
+      @include breakpoint(large){
         height: rem-calc(50);
         .animated-bars{
           display: block;
@@ -61,7 +61,7 @@
     background-color: $white;
     border-bottom: 3px solid $red;
 
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       padding: rem-calc(10 15);
       border-bottom-width: 6px;
     }
@@ -70,7 +70,7 @@
       .font-white{
         color: $black;
       }
-      @include breakpoint(medium) {
+      @include breakpoint(large) {
         font-size: rem-calc(40);
         line-height: rem-calc(40);
       }

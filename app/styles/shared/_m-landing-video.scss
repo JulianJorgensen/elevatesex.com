@@ -8,7 +8,7 @@
   height: 100vh;
   z-index: -99;
   background: rgba($black, 0.9);
-  @include breakpoint(medium){
+  @include breakpoint(large){
     display: block;
   }
 }

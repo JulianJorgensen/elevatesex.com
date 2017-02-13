@@ -5,7 +5,7 @@
   width: 100%;
   height: rem-calc(200);
 
-  @include breakpoint(medium){
+  @include breakpoint(large){
     height: rem-calc(400);
   }
 
@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include breakpoint(medium){
+    @include breakpoint(large){
       background-attachment: fixed;
     }
   }

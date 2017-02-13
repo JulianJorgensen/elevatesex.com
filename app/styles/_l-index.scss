@@ -7,7 +7,7 @@
   color: $white;
   padding-bottom: rem-calc(20);
 
-  @include breakpoint(medium){
+  @include breakpoint(large){
     @include flex-align(center, middle);
     height: 100vh;
   }
@@ -21,7 +21,7 @@
 #newsletter-landing{
   display: none;
 
-  @include breakpoint(medium){
+  @include breakpoint(large){
     position: absolute;
     bottom: 0;
     width: 100%;

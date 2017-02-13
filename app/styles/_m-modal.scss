@@ -35,7 +35,7 @@
       cursor: pointer;
     }
 
-    @include breakpoint(medium){
+    @include breakpoint(large){
       min-width: rem-calc(400);
     }
   }

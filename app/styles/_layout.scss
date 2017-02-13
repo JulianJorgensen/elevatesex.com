@@ -12,7 +12,7 @@
   max-width: rem-calc(600);
   margin: 0 auto;
   padding: rem-calc(0 15);
-  @include breakpoint(medium){
+  @include breakpoint(large){
     padding: 0;
   }
 }
