@@ -28,8 +28,8 @@ class Header extends React.Component {
       <Sticky id="site-header-wrapper" stickyClassName="header-small" topOffset={20}>
         <header id="site-header" className={nav.showNav ? 'show-site-nav' : ''}>
 
-          <div className="site-logo">
-            <IndexLink to="/" activeClassName="active-link" className={video.playVideo ? 'hide' : ''}><div><span className="font-white">Elevate</span><span className="font-red">Sex</span></div></IndexLink>
+          <div className={`site-logo ${video.playVideo ? 'transparent' : ''}`}>
+            <IndexLink to="/" activeClassName="active-link"><div><span className="font-white">Elevate</span><span className="font-red">Sex</span></div></IndexLink>
           </div>
           <nav className="site-nav">
             <div className={`site-nav-icon ${nav.showClose ? 'open' : ''}`} onClick={this.toggleNav.bind(this)}>

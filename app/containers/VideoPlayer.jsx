@@ -53,26 +53,20 @@ class VideoPlayer extends React.Component{
               dispatch(actions.closeVideo());
             }}
             onStateChange={(newState)=>{
-              // if (window.md.mobile()) {
-              //   switch(newState.data){
-              //     case 3:
-              //       dispatch(actions.videoIsLoading(true));
-              //       break;
-              //     case -1:
-              //     case 0:
-              //     case 5:
-              //       dispatch(actions.videoIsLoading(false));
-              //       break;
-              //     case 2:
-              //       dispatch(actions.videoIsLoading(false));
-              //       dispatch(actions.stopVideo());
-              //       break;
-              //     case 1:
-              //       dispatch(actions.videoIsLoading(false));
-              //       dispatch(actions.playVideo());
-              //       break;
-              //   }
-              // }
+              if (window.md.mobile()) {
+                switch(newState.data){
+                  case 3:
+                    dispatch(actions.videoIsLoading(true));
+                    break;
+                  case -1:
+                  case 0:
+                  case 1:
+                  case 2:
+                  case 5:
+                    dispatch(actions.videoIsLoading(false));
+                    break;
+                }
+              }
             }}
           />
         </div>
