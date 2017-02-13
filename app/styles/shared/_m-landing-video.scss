@@ -54,6 +54,7 @@
   }
 
   #player-wrapper{
+    position: relative;
     text-align: center;
   }
 }
@@ -71,6 +72,9 @@
     margin-left: -25%;
     width: 150%;
     opacity: 0;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
   }
 }
 
