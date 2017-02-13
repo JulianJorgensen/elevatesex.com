@@ -1,7 +1,7 @@
 .section-landing{
   @include flex();
   @include flex-align(center);
-  height: rem-calc(300);
+  height: rem-calc(250);
   flex-direction: column;
   width: 100%;
   color: $white;
@@ -16,6 +16,7 @@
 #section-landing-content{
   text-align: center;
   padding: rem-calc(15);
+  margin-top: rem-calc(60);
 }
 
 #newsletter-landing{

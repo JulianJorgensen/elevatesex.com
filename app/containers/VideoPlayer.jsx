@@ -53,8 +53,10 @@ class VideoPlayer extends React.Component{
                     break;
                   case -1:
                   case 0:
-                  case 2:
                   case 5:
+                    dispatch(actions.videoIsLoading(false));
+                    break;
+                  case 2:
                     dispatch(actions.videoIsLoading(false));
                     dispatch(actions.stopVideo());
                     break;
