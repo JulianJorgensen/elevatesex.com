@@ -12,23 +12,30 @@ class VideoPlayer extends React.Component{
   render() {
     let {dispatch, video} = this.props;
 
-    if(window.mobileAndTabletcheck() || video.loadingVideo || video.playVideo){
+    if(window.md.mobile() || video.loadingVideo || video.playVideo){
+      let windowWidth = window.innerWidth;
+      let playerWidth = windowWidth - 60;
+      let playerHeight = playerWidth / 1.778;
+
+      let playerOpts = {
+        width: playerWidth,
+        height: playerHeight,
+        playerVars: {
+          color: 'red',
+          showinfo: 0,
+          modestbranding: 1,
+          origin: 'https://www.elevatesex.com'
+        }
+      }
+
       return (
-        <div id="player-wrapper" className={video.playVideo || window.mobileAndTabletcheck() ? '' : 'hide'}>
+        <div id="player-wrapper" className={`${video.playVideo || window.md.mobile() ? '' : 'hide'} ${video.playVideo ? 'is-playing' : 'not-playing'}`}>
           <YouTube
             id="player"
-            className={video.playVideo ? 'is-playing' : 'not-playing'}
             videoId="xBV5j-Bg77A"
-            opts={{
-              playerVars: {
-                color: 'red',
-                showinfo: 0,
-                modestbranding: 1,
-                origin: 'https://www.elevatesex.com'
-              }
-            }}
+            opts={playerOpts}
             onReady={(event)=>{
-              if (!window.mobileAndTabletcheck()) {
+              if (!window.md.mobile()) {
                 // access to player in all event handlers via event.target
                 let player = event.target;
                 player.playVideo();
@@ -38,7 +45,7 @@ class VideoPlayer extends React.Component{
               }
             }}
             onPlay={(event)=>{
-              if (!window.mobileAndTabletcheck()) {
+              if (!window.md.mobile()) {
                 dispatch(actions.playVideo());
               }
             }}
@@ -46,26 +53,26 @@ class VideoPlayer extends React.Component{
               dispatch(actions.closeVideo());
             }}
             onStateChange={(newState)=>{
-              if (window.mobileAndTabletcheck()) {
-                switch(newState.data){
-                  case 3:
-                    dispatch(actions.videoIsLoading(true));
-                    break;
-                  case -1:
-                  case 0:
-                  case 5:
-                    dispatch(actions.videoIsLoading(false));
-                    break;
-                  case 2:
-                    dispatch(actions.videoIsLoading(false));
-                    dispatch(actions.stopVideo());
-                    break;
-                  case 1:
-                    dispatch(actions.videoIsLoading(false));
-                    dispatch(actions.playVideo());
-                    break;
-                }
-              }
+              // if (window.md.mobile()) {
+              //   switch(newState.data){
+              //     case 3:
+              //       dispatch(actions.videoIsLoading(true));
+              //       break;
+              //     case -1:
+              //     case 0:
+              //     case 5:
+              //       dispatch(actions.videoIsLoading(false));
+              //       break;
+              //     case 2:
+              //       dispatch(actions.videoIsLoading(false));
+              //       dispatch(actions.stopVideo());
+              //       break;
+              //     case 1:
+              //       dispatch(actions.videoIsLoading(false));
+              //       dispatch(actions.playVideo());
+              //       break;
+              //   }
+              // }
             }}
           />
         </div>
