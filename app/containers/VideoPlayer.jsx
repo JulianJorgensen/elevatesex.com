@@ -17,6 +17,7 @@ class VideoPlayer extends React.Component{
         <div id="player-wrapper" className={video.playVideo || window.mobileAndTabletcheck() ? '' : 'hide'}>
           <YouTube
             id="player"
+            className={video.playVideo ? 'is-playing' : 'not-playing'}
             videoId="xBV5j-Bg77A"
             opts={{
               playerVars: {
@@ -50,10 +51,14 @@ class VideoPlayer extends React.Component{
                     break;
                   case -1:
                   case 0:
-                  case 1:
                   case 2:
                   case 5:
                     dispatch(actions.videoIsLoading(false));
+                    dispatch(actions.stopVideo());
+                    break;
+                  case 1:
+                    dispatch(actions.videoIsLoading(false));
+                    dispatch(actions.playVideo());
                     break;
                 }
               }

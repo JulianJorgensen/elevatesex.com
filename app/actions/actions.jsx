@@ -44,7 +44,9 @@ export var playVideo = () => {
 };
 
 export var stopVideo = (player) => {
-  player.stopVideo();
+  if(player) {
+    player.stopVideo();
+  }
   return {
     type: 'STOP_VIDEO'
   };
