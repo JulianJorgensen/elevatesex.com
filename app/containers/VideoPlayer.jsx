@@ -13,8 +13,12 @@ class VideoPlayer extends React.Component{
     let {dispatch, video} = this.props;
 
     if(window.mobileAndTabletcheck() || video.loadingVideo || video.playVideo){
+      console.log('rendering video');
+      console.log('is mobile?', window.mobileAndTabletcheck());
+      console.log('loading video?', video.loadingVideo);
+      console.log('play video?', video.playVideo);
       return (
-        <div id="player-wrapper">
+        <div id="player-wrapper" className={video.playVideo || window.mobileAndTabletcheck() ? '' : 'hide'}>
           <YouTube
             id="player"
             videoId="xBV5j-Bg77A"
@@ -43,17 +47,19 @@ class VideoPlayer extends React.Component{
               dispatch(actions.closeVideo());
             }}
             onStateChange={(newState)=>{
-              switch(newState.data){
-                case 3:
-                  dispatch(actions.videoIsLoading(true));
-                  break;
-                case -1:
-                case 0:
-                case 1:
-                case 2:
-                case 5:
-                  dispatch(actions.videoIsLoading(false));
-                  break;
+              if (window.mobileAndTabletcheck()) {
+                switch(newState.data){
+                  case 3:
+                    dispatch(actions.videoIsLoading(true));
+                    break;
+                  case -1:
+                  case 0:
+                  case 1:
+                  case 2:
+                  case 5:
+                    dispatch(actions.videoIsLoading(false));
+                    break;
+                }
               }
             }}
           />
