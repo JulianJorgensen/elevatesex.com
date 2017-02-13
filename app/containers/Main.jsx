@@ -35,7 +35,7 @@ class Main extends React.Component{
         ograph: true
       }
     };
-
+    alert(window.md.mobile('iPhone') ? 'is iphone' : 'is not iphone');
     return (
       <StickyContainer className={`${window.md.mobile() ? 'is-mobile' : ''} ${window.md.mobile('iPhone') ? 'is-iphone' : 'is-not-iphone'}`}>
         <DocumentMeta {...meta} />
