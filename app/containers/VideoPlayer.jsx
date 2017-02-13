@@ -21,8 +21,10 @@ class VideoPlayer extends React.Component{
             videoId="xBV5j-Bg77A"
             opts={{
               playerVars: {
-                autohide: 0,
-                showinfo: 0
+                color: 'red',
+                showinfo: 0,
+                modestbranding: 1,
+                origin: 'https://www.elevatesex.com'
               }
             }}
             onReady={(event)=>{

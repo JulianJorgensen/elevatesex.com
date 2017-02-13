@@ -63,9 +63,10 @@
   @include breakpoint(medium down){
     #player{
       opacity: 0.2;
-      width: 100%;
+      width: 150%;
+      margin-left: -25%;
       margin-top: rem-calc(-80);
-      height: rem-calc(80);
+      height: rem-calc(60);
 
       &.is-playing{
         position: fixed;
