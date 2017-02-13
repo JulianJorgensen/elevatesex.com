@@ -49,6 +49,7 @@
 
 // the player itself
 #player-wrapper{
+  border: 1px solid yellow;
   @include transition(opacity 0.5s);
 
   #player{

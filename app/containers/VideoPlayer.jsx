@@ -13,10 +13,7 @@ class VideoPlayer extends React.Component{
     let {dispatch, video} = this.props;
 
     if(window.mobileAndTabletcheck() || video.loadingVideo || video.playVideo){
-      console.log('rendering video');
-      console.log('is mobile?', window.mobileAndTabletcheck());
-      console.log('loading video?', video.loadingVideo);
-      console.log('play video?', video.playVideo);
+      alert('is mobile', window.mobileAndTabletcheck());
       return (
         <div id="player-wrapper" className={video.playVideo || window.mobileAndTabletcheck() ? '' : 'hide'}>
           <YouTube

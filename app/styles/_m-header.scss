@@ -12,7 +12,7 @@
   @include flex-align(null, middle);
   justify-content: space-between;
   z-index: 90;
-  padding: rem-calc(0 5);
+  padding: rem-calc(5 10);
   @include transition(all 0.2s);
 
   @include breakpoint(medium){
@@ -58,7 +58,6 @@
 
 #site-header-wrapper.header-small{
   #site-header{
-    padding: rem-calc(0 5);
     background-color: $white;
     border-bottom: 3px solid $red;
 

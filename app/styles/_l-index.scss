@@ -1,6 +1,6 @@
 .section-landing{
   @include flex();
-  @include flex-align(center, bottom);
+  @include flex-align(center);
   height: rem-calc(300);
   flex-direction: column;
   width: 100%;
@@ -9,7 +9,6 @@
 
   @include breakpoint(medium){
     @include flex-align(center, middle);
-    flex-direction: row;
     height: 100vh;
   }
 }
