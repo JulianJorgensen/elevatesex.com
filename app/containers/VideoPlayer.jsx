@@ -12,9 +12,9 @@ class VideoPlayer extends React.Component{
   render() {
     let {dispatch, video} = this.props;
 
-    if(video.loadingVideo || video.playVideo){
+    if(window.mobileAndTabletcheck() || video.loadingVideo || video.playVideo){
       return (
-        <div id="player-wrapper" className={video.playVideo ? '' : 'transparent'}>
+        <div id="player-wrapper">
           <YouTube
             id="player"
             videoId="xBV5j-Bg77A"
@@ -25,18 +25,24 @@ class VideoPlayer extends React.Component{
               }
             }}
             onReady={(event)=>{
-              // access to player in all event handlers via event.target
-              let player = event.target;
-              player.playVideo();
-              dispatch(actions.createPlayer(player));
-              dispatch(actions.toggleNavIcon());
-              dispatch(actions.hideNewsletter());
+              if (!window.mobileAndTabletcheck()) {
+                // access to player in all event handlers via event.target
+                let player = event.target;
+                player.playVideo();
+                dispatch(actions.createPlayer(player));
+                dispatch(actions.toggleNavIcon());
+                dispatch(actions.hideNewsletter());
+              }
             }}
             onPlay={(event)=>{
-              dispatch(actions.playVideo());
+              if (!window.mobileAndTabletcheck()) {
+                dispatch(actions.playVideo());
+              }
             }}
             onEnd={()=>{
-              dispatch(actions.closeVideo());
+              if (!window.mobileAndTabletcheck()) {
+                dispatch(actions.closeVideo());
+              }
             }}
           />
         </div>

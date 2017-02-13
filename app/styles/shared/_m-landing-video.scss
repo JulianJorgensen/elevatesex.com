@@ -28,3 +28,11 @@
     display: block;
   }
 }
+
+#player-wrapper{
+  position: relative;
+  opacity: 0;
+  width: 100%;
+  top: rem-calc(-80);
+  height: rem-calc(80);
+}
