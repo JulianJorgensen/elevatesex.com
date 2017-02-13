@@ -29,7 +29,7 @@ class VideoPlayer extends React.Component{
       }
 
       return (
-        <div id="player-wrapper" className={`${video.playVideo || window.md.mobile() ? '' : 'hide'} ${video.playVideo ? 'is-playing' : 'not-playing'}`}>
+        <div id="player-wrapper" className={`${video.playVideo || window.md.mobile() ? '' : 'hide'} ${video.playVideo ? 'is-playing' : ''}`}>
           <YouTube
             id="player"
             videoId="xBV5j-Bg77A"

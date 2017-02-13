@@ -10,6 +10,7 @@ class VideoPlayButton extends React.Component{
   render() {
     let {dispatch, video, id} = this.props;
 
+    alert(window.md.mobile());
     if (!window.md.mobile()) {
       return (
         <div id={id} className="button large" onClick={()=>{
