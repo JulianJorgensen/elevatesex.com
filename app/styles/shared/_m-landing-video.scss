@@ -49,6 +49,7 @@
 
 // the player itself
 #player-wrapper{
+  position: relative;
   border: 2px solid orange;
   @include transition(opacity 0.5s);
 
@@ -62,7 +63,6 @@
   }
 
   @include breakpoint(small only){
-    position: absolute;
     opacity: 0.3;
     width: 100%;
     margin-top: rem-calc(-80);
