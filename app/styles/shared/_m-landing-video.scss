@@ -51,8 +51,10 @@
 #player-wrapper{
   position: relative;
   @include transition(opacity 0.5s);
+  border: 2px solid yellow;
 
   #player{
+    border: 4px solid orange;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,12 +64,13 @@
 
   @include breakpoint(small only){
     #player{
-      opacity: 0;
+      opacity: 0.2;
       width: 100%;
       margin-top: rem-calc(-80);
       height: rem-calc(80);
 
       &.is-playing{
+        border: 4px solid purple;
         position: fixed;
         top: 0;
         left: 0;
@@ -75,7 +78,7 @@
         height: 100%;
         width: 100%;
         margin-top: 0;
-        z-index: 999999;
+        z-index: 9999;
       }
     }
   }
