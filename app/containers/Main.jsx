@@ -4,6 +4,7 @@ import Header from 'Header';
 import DocumentMeta from 'react-document-meta';
 import myfont from 'KefaFont';
 import { StickyContainer, Sticky } from 'react-sticky';
+import MobileDetect from 'mobile-detect';
 
 class Main extends React.Component{
   constructor(props){
@@ -16,12 +17,8 @@ class Main extends React.Component{
   }
 
   componentWillMount() {
-    // contentAPI.fetchEntry('6GWX6wq58skQUYGUWaggEu').then((entry) => {
-    //   this.setState({
-    //     title: entry.title,
-    //     content: entry.body
-    //   });
-    // });
+    // mobile detection singleton
+    window.md = new MobileDetect(window.navigator.userAgent);
   }
 
   render() {
@@ -40,7 +37,7 @@ class Main extends React.Component{
     };
 
     return (
-      <StickyContainer>
+      <StickyContainer className={`${window.md.mobile() ? 'is-mobile' : ''} ${window.md.mobile('iPhone') ? 'is-iphone' : 'is-not-iphone'}`}>
         <DocumentMeta {...meta} />
         <Header/>
         {this.props.children}

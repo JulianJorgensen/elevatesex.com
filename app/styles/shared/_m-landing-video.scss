@@ -41,46 +41,62 @@
     position: relative;
     bottom: -2px;
   }
-  @include breakpoint(large){
+  @include breakpoint(large) {
     margin-top: rem-calc(25);
     font-size: 1.7rem;
   }
 }
 
-// the player itself
-#player-wrapper{
-  position: relative;
-  @include transition(opacity 0.5s);
-  text-align: center;
-
-  #player{
-    // position: absolute;
-    // top: 0;
-    // width: 100%;
-    // height: 100%;
+// the player on mobile
+@include breakpoint(medium down){
+  #player-watch{
+    display: none;
   }
 
-  @include breakpoint(medium down){
+  #player-wrapper{
+    position: relative;
+    text-align: center;
+
     #player{
-      opacity: 0.2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 998;
     }
+  }
+}
 
-    & {
-      position: static;
-      opacity: 1;
+// the player on iphones
+.is-mobile.is-iphone{
+  #player-watch{
+    display: inline-block;
+  }
 
-      &, #player{
-        // height: rem-calc(150);
-        // width: rem-calc(267);
-      }
+  #player-wrapper #player{
+    position: absolute;
+    margin-top: rem-calc(-80);
+    height: rem-calc(60);
+    margin-left: -25%;
+    width: 150%;
+    opacity: 0;
+  }
+}
 
-      #player{
-        position: static;
-        opacity: 1;
-      }
-      // fixes for android only
-      // position: static;
-      // margin-top: 0;
+// the player on desktop
+@include breakpoint(large){
+  #player-wrapper{
+    position: relative;
+    text-align: center;
+
+    #player{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 998;
     }
   }
 }
