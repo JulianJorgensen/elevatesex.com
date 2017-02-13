@@ -1,14 +1,15 @@
 .section-landing{
   @include flex();
-  @include flex-align(flex-end, center);
-  flex-direction: column;
+  @include flex-align(center, bottom);
   height: rem-calc(300);
+  flex-direction: column;
   width: 100%;
   color: $white;
   padding-bottom: rem-calc(20);
 
   @include breakpoint(medium){
-    @include flex-align(center);
+    @include flex-align(center, middle);
+    flex-direction: row;
     height: 100vh;
   }
 }
@@ -16,16 +17,6 @@
 #section-landing-content{
   text-align: center;
   padding: rem-calc(15);
-}
-
-// watch now
-#player-watch{
-  margin-top: rem-calc(25);
-  font-size: 1.7rem;
-  .fa-play-circle{
-    position: relative;
-    bottom: -2px;
-  }
 }
 
 #newsletter-landing{

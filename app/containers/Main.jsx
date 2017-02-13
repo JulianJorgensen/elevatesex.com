@@ -3,6 +3,7 @@ import Header from 'Header';
 // import contentAPI from 'contentAPI';
 import DocumentMeta from 'react-document-meta';
 import myfont from 'KefaFont';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 class Main extends React.Component{
   constructor(props){
@@ -39,11 +40,11 @@ class Main extends React.Component{
     };
 
     return (
-      <div>
+      <StickyContainer>
         <DocumentMeta {...meta} />
         <Header/>
         {this.props.children}
-      </div>
+      </StickyContainer>
     );
   }
 }

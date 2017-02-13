@@ -33,6 +33,21 @@
   }
 }
 
+// watch now
+#player-watch{
+  margin-top: rem-calc(15);
+  font-size: 1.2rem;
+  .fa-play-circle{
+    position: relative;
+    bottom: -2px;
+  }
+  @include breakpoint(large){
+    margin-top: rem-calc(25);
+    font-size: 1.7rem;
+  }
+}
+
+// the player itself
 #player-wrapper{
   @include transition(opacity 0.5s);
 

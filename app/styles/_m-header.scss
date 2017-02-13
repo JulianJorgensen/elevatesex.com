@@ -1,0 +1,98 @@
+// site header (logo and nav icon)
+// ===========================
+#site-header-wrapper{
+  position: fixed;
+  height: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#site-header{
+  @include flex();
+  @include flex-align(null, middle);
+  justify-content: space-between;
+  z-index: 90;
+  padding: rem-calc(0 5);
+  @include transition(all 0.2s);
+
+  @include breakpoint(medium){
+    padding: rem-calc(0 15);
+  }
+
+  .site-logo{
+    font-weight: bold;
+    color: $white;
+    font-size: rem-calc(20);
+    @include transition(all 0.2s);
+    z-index: 1000;
+
+    @include breakpoint(medium){
+      font-size: rem-calc(60);
+    }
+  }
+  .site-nav{
+    cursor: pointer;
+    z-index: 999;
+
+    .site-nav-icon{
+      position: relative;
+      width: rem-calc(50);
+      text-align: right;
+      color: $white;
+      font-size: rem-calc(25);
+      .animated-bars{
+        display: none;
+      }
+      @include breakpoint(medium){
+        height: rem-calc(50);
+        .animated-bars{
+          display: block;
+        }
+        .fa{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#site-header-wrapper.header-small{
+  #site-header{
+    padding: rem-calc(0 5);
+    background-color: $white;
+    border-bottom: 3px solid $red;
+
+    @include breakpoint(medium) {
+      padding: rem-calc(10 15);
+      border-bottom-width: 6px;
+    }
+
+    .site-logo{
+      .font-white{
+        color: $black;
+      }
+      @include breakpoint(medium) {
+        font-size: rem-calc(40);
+        line-height: rem-calc(40);
+      }
+    }
+
+    .site-nav-icon{
+      height: rem-calc(32);
+      width: rem-calc(45);
+      color: $black;
+    }
+    .site-nav-icon span {
+      height: 6px;
+      background-color: $black;
+      &:nth-child(3),
+      &:nth-child(4){
+        top: 13px;
+      }
+      &:nth-child(5),
+      &:nth-child(6){
+        top: 26px;
+      }
+    }
+  }
+}
