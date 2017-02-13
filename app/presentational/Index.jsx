@@ -13,6 +13,24 @@ class Index extends React.Component{
   }
 
   render() {
+    let renderBgVideo = () => {
+      if (!window.md.mobile()) {
+        return (
+          <div>
+            <div className="landing-video-overlay"></div>
+            <video className="landing-video" autoPlay loop muted playsInline poster="/images/landing-bg.jpg">
+              <source src="/videos/elevatesex-bg-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        )
+      }else{
+        return (
+          <div id="landing-section-bg"></div>
+        )
+      }
+    }
+
     return (
       <div>
         <section className="section-landing">
@@ -24,11 +42,7 @@ class Index extends React.Component{
           </div>
 
           {/* landing video */}
-          <div className="landing-video-overlay"></div>
-          <video className="landing-video" autoPlay loop muted playsInline poster="/images/landing-bg.jpg">
-            <source src="/videos/elevatesex-bg-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {renderBgVideo()}
 
           {/* Video Player */}
           <VideoPlayer />

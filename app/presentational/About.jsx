@@ -17,13 +17,16 @@ class About extends React.Component{
           <div className="row">
             <div className="small-12 medium-6 columns">
               <h2>Jocelyn</h2>
-              <p className="lead">Sex is the source of life. When the source is elevated your life awakens. Through this activation we became empowered, unified and purposeful. Feeling a deeper authenticity in our relationship(s). Confidence and love radiated through our bodies. </p>
-              <p className="lead">An undeniable energy kept pointing us towards a deeper sense of who we truly are. For lack of better words, it was a spiritual orgasm. This magic continues to be alive between us.</p>
+              <p>In traditional Chinese families, sex was more of an obligation to reproducing children than to experience pleasure or connectedness with your lover. Nevertheless transform one's life. Jocelyn was born into these beliefs, even though she grew up in Canadian culture, and it set her up for years of confusion in her sex and love life. Everything from early masturbation to regular drunk sex, manipulation of men to being walked all over, slutty sex to scratching the itch. Sex became a means to an end.</p>
+              <p>It wasn't until Julian came into Jocelyn's life and she went to her first tantra festival that she explored sex in a whole new way. She discovered new ways to experience sexual pleasure that could make her laugh hysterically in bliss, deeply sob as she released her past, go into a rhythmic trance where time stood still, where her body was so open that she flowed like a water fall. Each of these moments were directly transforming her life for the better. Thoughts, feelings or experiences that were holding her back were layers falling away through sex.</p>
+              <p>A whole new realm of possibilities opened up, and she instantly felt called to share this elevation of sex, so all women and men can live in freedom. It's our most hidden personal power, awaiting our activation.</p>
+              <p>Jocelyn desires to share this journey with you. Leading by example and personal experience. She brings her talents with her as an Empowerment Coach for Women, a Shamballa Reiki Master, a Crystal Healing Practitioner, and Blogger/Vlogger to give you the tools to take sex, love and relationships to a whole new level. She is also a Yin Yoga Instructor, an Intuitive Masseuse, and a Artist - adding more depth to her message.</p>
+              <p>Jocelyn invites you to journey with her and Julian to rise in love, through sex.</p>
             </div>
             <div className="small-12 medium-6 columns">
               <h2>Julian</h2>
-              <p className="lead">Inspired by tantric communities, we feel called to share and create these experiences with you; to Elevate Sex.</p>
-              <p className="lead">Welcome to the community.</p>
+              <p>Sed quis egestas ex. Aenean in lobortis justo, sed porta ipsum. Donec in eros quis risus consectetur vestibulum nec at justo. Mauris bibendum congue aliquet. Fusce tincidunt est ut tincidunt finibus. Proin dignissim elit maximus, lobortis nulla vitae, cursus velit. Aliquam gravida imperdiet sapien, rhoncus rutrum quam pretium et.</p>
+              <p>Quisque et eleifend sem. Duis convallis metus sit amet eros dignissim, at dictum mi gravida. Aliquam id cursus purus.</p>
             </div>
           </div>
         </section>

@@ -27,12 +27,11 @@ class VideoPlayer extends React.Component{
           origin: 'https://www.elevatesex.com'
         }
       }
-
       return (
         <div id="player-wrapper" className={`${video.playVideo || window.md.mobile() ? '' : 'hide'}`}>
           <YouTube
             id="player"
-            videoId="xBV5j-Bg77A"
+            videoId="E4jTC_4dlps"
             opts={playerOpts}
             onReady={(event)=>{
               if (!window.md.mobile()) {
@@ -58,10 +57,12 @@ class VideoPlayer extends React.Component{
                   case 3:
                     dispatch(actions.videoIsLoading(true));
                     break;
+                  case 2:
+                    dispatch(actions.closeVideo());
+                    break;
                   case -1:
                   case 0:
                   case 1:
-                  case 2:
                   case 5:
                     dispatch(actions.videoIsLoading(false));
                     break;

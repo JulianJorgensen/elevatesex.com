@@ -81,17 +81,18 @@ class Newsletter extends React.Component{
         if (newsletter.showInModal) {
           return (
             <ReactModal isOpen={true} closeTimeoutMS={200} className="ReactModal__Content" onRequestClose={this.handleCloseModal} contentLabel="test">
-              <h3>Special offer</h3>
+              <h3 className="modal-headline">Special offer</h3>
               <ul>
                 <li>Deepen your relationship(s)</li>
                 <li>Expand your awareness</li>
                 <li>Get tools to navigate relationship challenges</li>
                 <li>Improve your love communication</li>
               </ul>
-              <p>Sign up now and get a free pussy meditation</p>
-              <form id="newsletter-signup-form" onSubmit={this.handleSubmit.bind(this)} noValidate>
+              <p><i>Enter your email now and get the Pussy Meditation for free!</i></p>
+              <form id="newsletter-signup-form" className="text-center" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
-                <input type="submit" value="I want to Elevate" className="button" />
+                <input type="submit" value="I want to ElevateSex" className="button large" />
+                <p><small><a onClick={this.handleCloseModal}>No thanks, I don't want better sex</a></small></p>
               </form>
 
               <div id="newsletter-error" className={!this.state.subscribeError ? 'hide' : '' }>
@@ -106,7 +107,7 @@ class Newsletter extends React.Component{
             <div>
               <form className="newsletter-signup-form" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
-                <input type="submit" value="I want to Elevate" className="button" />
+                <input type="submit" value="I want to Elevate Sex" className="button" />
               </form>
 
               <div className={`newsletter-error ${!this.state.subscribeError ? 'hide' : '' }`}>
@@ -126,7 +127,7 @@ class Newsletter extends React.Component{
         <ReactModal isOpen={newsletter.subscribed && newsletter.showConfirmation} closeTimeoutMS={200} className="ReactModal__Content" onRequestClose={this.handleCloseConfirmationModal} contentLabel="newsletter-confirmation">
           <h2 className="font-green">Thank you!</h2>
           <h4>To complete your subscription,<br />please click the link in the email we just sent you.</h4>
-          <button className="button large success pull-right">Done</button>
+          <button className="button large success pull-right" onClick={this.handleCloseConfirmationModal}>Done</button>
         </ReactModal>
       </div>
     )

@@ -54,7 +54,7 @@ export var stopVideo = (player) => {
 
 export var closeVideo = () => {
   return (dispatch, getState) => {
-    dispatch(toggleNavIcon());
+    dispatch(closeNav());
     dispatch(stopVideo(getState().video.player));
     dispatch(showNewsletterInModal(true));
     dispatch(showNewsletter());

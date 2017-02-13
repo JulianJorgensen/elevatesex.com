@@ -6,12 +6,22 @@
 
   .ReactModal__Content{
     position: relative;
-    background-color: $red;
-    padding: rem-calc(40);
+    background-color: $white;
     opacity: 0;
+    padding: rem-calc(10);
+    max-width: 90vw;
     @include transition(opacity 0.2s ease-in-out);
     &, &:focus{
       outline: none;
+    }
+
+    @include breakpoint(large){
+      padding: rem-calc(40);
+    }
+
+    .modal-headline{
+      color: $red;
+      font-weight: bold;
     }
 
     &.ReactModal__Content--after-open{
@@ -22,17 +32,20 @@
     }
 
     .close-modal-icon{
-      background-color: $white;
-      position: absolute;
-      top: rem-calc(-15);
-      right: rem-calc(-15);
-      font-size: rem-calc(25);
-      color: $red;
-      padding: rem-calc(3);
-      width: rem-calc(35);
-      height: rem-calc(35);
-      border-radius: 50%;
-      cursor: pointer;
+      display: none;
+      @include breakpoint(large){
+        background-color: $white;
+        position: absolute;
+        top: rem-calc(-15);
+        right: rem-calc(-15);
+        font-size: rem-calc(25);
+        color: $red;
+        padding: rem-calc(3);
+        width: rem-calc(35);
+        height: rem-calc(35);
+        border-radius: 50%;
+        cursor: pointer;
+      }
     }
 
     @include breakpoint(large){
