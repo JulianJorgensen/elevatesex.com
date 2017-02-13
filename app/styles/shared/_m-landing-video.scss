@@ -54,23 +54,12 @@
   }
 
   #player-wrapper{
-    position: relative;
     text-align: center;
-
-    #player{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 998;
-    }
   }
 }
 
 // the player on iphones
 .is-mobile.is-iphone{
-  border: 5px solid orange;
   #player-watch{
     display: inline-block;
   }
