@@ -30,10 +30,10 @@ export var videoReducer = (state = {playVideo: false, loadingVideo: false}, acti
         ...state,
         player: action.player
       };
-    case 'START_PLAY_VIDEO':
+    case 'TOGGLE_VIDEO_IS_LOADING':
       return {
         ...state,
-        loadingVideo: true
+        loadingVideo: action.isLoading
       };
     case 'PLAY_VIDEO':
       return {

@@ -1,5 +1,6 @@
 // landing page video
 .landing-video-overlay{
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -7,6 +8,9 @@
   height: 100vh;
   z-index: -99;
   background: rgba($black, 0.9);
+  @include breakpoint(medium){
+    display: block;
+  }
 }
 .landing-video{
   display: none;
@@ -30,9 +34,9 @@
 }
 
 #player-wrapper{
-  position: relative;
+  position: absolute;
   opacity: 0;
   width: 100%;
-  top: rem-calc(-80);
+  margin-top: rem-calc(-80);
   height: rem-calc(80);
 }

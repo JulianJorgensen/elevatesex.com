@@ -30,9 +30,10 @@ export var createPlayer = (player) => {
   };
 };
 
-export var startPlayVideo = () => {
+export var videoIsLoading = (isLoading) => {
   return {
-    type: 'START_PLAY_VIDEO'
+    type: 'TOGGLE_VIDEO_IS_LOADING',
+    isLoading
   };
 };
 

@@ -40,8 +40,20 @@ class VideoPlayer extends React.Component{
               }
             }}
             onEnd={()=>{
-              if (!window.mobileAndTabletcheck()) {
-                dispatch(actions.closeVideo());
+              dispatch(actions.closeVideo());
+            }}
+            onStateChange={(newState)=>{
+              switch(newState.data){
+                case 3:
+                  dispatch(actions.videoIsLoading(true));
+                  break;
+                case -1:
+                case 0:
+                case 1:
+                case 2:
+                case 5:
+                  dispatch(actions.videoIsLoading(false));
+                  break;
               }
             }}
           />

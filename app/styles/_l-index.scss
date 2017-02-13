@@ -1,14 +1,21 @@
 .section-landing{
   @include flex();
-  @include flex-align(center, middle);
+  @include flex-align(flex-end, center);
   flex-direction: column;
-  height: 100vh;
+  height: rem-calc(300);
   width: 100%;
   color: $white;
+  padding-bottom: rem-calc(20);
+
+  @include breakpoint(medium){
+    @include flex-align(center);
+    height: 100vh;
+  }
 }
 
 #section-landing-content{
   text-align: center;
+  padding: rem-calc(15);
 }
 
 // watch now
@@ -18,5 +25,45 @@
   .fa-play-circle{
     position: relative;
     bottom: -2px;
+  }
+}
+
+#newsletter-landing{
+  display: none;
+
+  @include breakpoint(medium){
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($primary-color, 0.4);
+    @include flex();
+    @include flex-align(center);
+  }
+
+  .newsletter-signup-form{
+    width: rem-calc(300);
+    padding: rem-calc(10) 0;
+    @include flex();
+    input{
+      background-color: $black;
+      margin-bottom: 0;
+      margin-right: rem-calc(15);
+      border: 0;
+      color: $white;
+      &:last-child{
+        margin-right: 0;
+      }
+      &[type="email"]{
+        width: rem-calc(200);
+      }
+    }
+  }
+
+  .newsletter-error{
+    position: absolute;
+    top: rem-calc(-50);
+    background-color: $alert-color;
+    padding: rem-calc(4 10);
+    font-weight: bold;
   }
 }

@@ -104,12 +104,12 @@ class Newsletter extends React.Component{
         }else{
           return (
             <div>
-              <form id="newsletter-signup-form" onSubmit={this.handleSubmit.bind(this)} noValidate>
+              <form className="newsletter-signup-form" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
                 <input type="submit" value="I want to Elevate" className="button" />
               </form>
 
-              <div id="newsletter-error" className={!this.state.subscribeError ? 'hide' : '' }>
+              <div className={`newsletter-error ${!this.state.subscribeError ? 'hide' : '' }`}>
                 <small className="font-red">{this.state.subscribeError}</small>
               </div>
             </div>
@@ -119,7 +119,7 @@ class Newsletter extends React.Component{
     }
 
     return (
-      <div id="newsletter">
+      <div id="newsletter-landing">
         {/* newsletter signup form */}
         {renderNewsletterForm()}
 

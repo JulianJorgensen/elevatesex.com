@@ -11,9 +11,7 @@ class VideoPlayButton extends React.Component{
     let {dispatch, video, id} = this.props;
 
     return (
-      <div id={id} className="button large" onClick={()=>{
-          dispatch(actions.startPlayVideo());
-        }}>
+      <div id={id} className="button large">
         <span className="watch">watch</span> <i className={video.loadingVideo ? 'fa fa-spinner fa-pulse fa-fw' : 'fa fa-play-circle'}></i>
       </div>
     )
