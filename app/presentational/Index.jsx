@@ -54,16 +54,15 @@ class Index extends React.Component{
 
         <section className="section">
           <div className="container">
-            <p className="lead">Sex is the source of life. When the source is elevated your life awakens. Through this activation we became empowered, unified and purposeful. Feeling a deeper authenticity in our relationship(s). Confidence and love radiated through our bodies. </p>
-            <p className="lead">An undeniable energy kept pointing us towards a deeper sense of who we truly are. For lack of better words, it was a spiritual orgasm. This magic continues to be alive between us.</p>
-            <p className="lead">Inspired by tantric communities, we feel called to share and create these experiences with you; to Elevate Sex.</p>
-            <p className="lead">Welcome to the community.</p>
+            <p className="lead">Whether you’re single or in a relationship, we need and want sex, passion and love. Your sex life is the playground for you and your partner to learn with each other, and to grow together. We are who we are in relation to one other.</p>
+            <p className="lead">We are choosing to share with you the intimate journey of our tantric relationship. Where it’s all about elevating sex. That means improving your quality, depth and purpose of sex.</p>
+            <p className="lead">Sex is the source of life - so in case you were wondering - it definitely affects your life. And it’s an untapped energy readily available to improve your relationships. It’s an experience you can use to live confidently, authentically and blissfully with yourself and those you love. Taking the power of sex from reproduction to transformation.</p>
             <div className="row">
               <div className="small-12 medium-6">
-                <Link to="/for-singles" className="button large secondary">Read tips for Singles</Link>
+                <Link to="/for-singles" className="button large secondary">Secrets for Singles</Link>
               </div>
               <div className="small-12 medium-6 text-right">
-                <Link to="/for-couples" className="button large secondary">Read tips for Couples</Link>
+                <Link to="/for-couples" className="button large secondary">Secrets for Couples</Link>
               </div>
             </div>
             {/* <h2><ContactMethod /></h2> */}

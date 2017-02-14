@@ -1,7 +1,17 @@
 #page-about{
+  .marquee{
+    background-color: $red;
+    .marquee-image{
+      opacity: 0.5;
+    }
+  }
   .bio{
     position: relative;
-    margin-top: rem-calc(-60);
+    margin-top: rem-calc(-80);
+
+    @include breakpoint(large){
+      margin-top: rem-calc(-60);
+    }
   }
   .bio-name{
     padding: rem-calc(10);

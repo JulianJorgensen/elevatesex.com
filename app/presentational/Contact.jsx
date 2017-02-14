@@ -11,8 +11,13 @@ class Contact extends React.Component{
   }
 
   render() {
+    const meta = {
+      title: 'Contact ElevateSex | ElevateSex.com'
+    };
+
     return (
       <div className="page">
+        <DocumentMeta {...meta} extend />
         <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/elevate-sand-written.jpg)'}}></div></div>
         <section className="section">
           <div className="container text-center">

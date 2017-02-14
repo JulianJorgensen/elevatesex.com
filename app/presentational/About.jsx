@@ -11,8 +11,13 @@ class About extends React.Component{
   }
 
   render() {
+    const meta = {
+      title: 'About Jocelyn & Julian | ElevateSex.com'
+    };
+
     return (
       <div id="page-about">
+        <DocumentMeta {...meta} extend />
         <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/about-julian-and-jocelyn-elevatesex.jpg)'}}></div></div>
         <section className="section">
           <div className="row">
