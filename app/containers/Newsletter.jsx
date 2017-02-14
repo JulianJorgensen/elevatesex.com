@@ -85,14 +85,14 @@ class Newsletter extends React.Component{
         if (newsletter.showInModal) {
           return (
             <ReactModal isOpen={true} closeTimeoutMS={200} className="ReactModal__Content" onRequestClose={this.handleCloseModal} contentLabel="test">
-              <h3 className="modal-headline">Free valentines gift</h3>
+              <h3 className="modal-headline">Free valentines gift!</h3>
               <ul>
                 <li>Deepen your relationship(s)</li>
                 <li>Expand your awareness</li>
                 <li>Get tools to navigate relationship challenges</li>
                 <li>Improve your love communication</li>
               </ul>
-              <p><i>Enter your email now and<br />get our Pussy Meditation for free!</i></p>
+              <p><i>Enter your email now and<br />get our 10 Acts of Love to Elevate Your Sex for free!</i></p>
               <form id="newsletter-signup-form" className="text-center" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
                 <input type="submit" value={buttonText ? buttonText : 'I want secrets to great sex'} className="button large" />

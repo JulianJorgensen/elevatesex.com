@@ -19,7 +19,7 @@ class ForSingles extends React.Component{
         <section className="section">
           <div className="row">
             <div className="small-12 medium-6 columns">
-              <p className="lead">Are you the nice guy that keeps getting told to “man up?” Are you the strong independent woman that is wondering when there’ll be a man that can “handle you?” Maybe you’re worried you’ll be alone forever?</p>
+              <p className="lead font-red"><em>Are you the nice guy that keeps getting told to “man up?” Are you the strong independent woman that is wondering when there’ll be a man that can “handle you?” Maybe you’re worried you’ll be alone forever?</em></p>
               <p>We feel you - we’ve been there. But, let us tell you - epic conscious love and sex is out there. But it’s not a destination. It’s an exploration, that begins with the question of: How much love you have for yourself and how authentic you are being in every moment. </p>
               <p>Scary isn’t it? Well, it doesn’t have to be. You’ve got the J team here to help you, both feminine and masculine perspectives. We’ll share choices we made that brought us together with you so you have a roadmap for your own journey.</p>
             </div>
