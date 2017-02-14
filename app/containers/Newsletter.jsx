@@ -74,7 +74,7 @@ class Newsletter extends React.Component{
   }
 
   render() {
-    let {dispatch, newsletter} = this.props;
+    let {dispatch, newsletter, buttonClass, buttonText} = this.props;
 
     let renderNewsletterForm = () => {
       if (newsletter.show) {
@@ -88,11 +88,11 @@ class Newsletter extends React.Component{
                 <li>Get tools to navigate relationship challenges</li>
                 <li>Improve your love communication</li>
               </ul>
-              <p><i>Enter your email now and get the Pussy Meditation for free!</i></p>
+              <p><i>Enter your email now and<br />get our Pussy Meditation for free!</i></p>
               <form id="newsletter-signup-form" className="text-center" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
-                <input type="submit" value="I want to ElevateSex" className="button large" />
-                <p><small><a onClick={this.handleCloseModal}>No thanks, I don't want better sex</a></small></p>
+                <input type="submit" value={buttonText ? buttonText : 'I want the secrets to great sex'} className="button large" />
+                <p className="margin-top-medium margin-none"><a onClick={this.handleCloseModal}>No thanks, I don't want better sex</a></p>
               </form>
 
               <div id="newsletter-error" className={!this.state.subscribeError ? 'hide' : '' }>
@@ -107,7 +107,7 @@ class Newsletter extends React.Component{
             <div>
               <form className="newsletter-signup-form" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
-                <input type="submit" value="I want to Elevate Sex" className="button" />
+                <input type="submit" value={buttonText ? buttonText : 'I want the secrets to great sex'} className={`button ${buttonClass ? buttonClass : ''}`} />
               </form>
 
               <div className={`newsletter-error ${!this.state.subscribeError ? 'hide' : '' }`}>
@@ -120,7 +120,7 @@ class Newsletter extends React.Component{
     }
 
     return (
-      <div id="newsletter-landing">
+      <div className="newsletter">
         {/* newsletter signup form */}
         {renderNewsletterForm()}
 

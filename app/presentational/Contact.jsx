@@ -12,12 +12,14 @@ class Contact extends React.Component{
 
   render() {
     return (
-      <div>
-        <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/landing-bg.jpg)'}}></div></div>
+      <div className="page page-marquee" style={{backgroundImage: 'url(/images/jocelyn_julian_elevatesex.jpg)'}}>
         <section className="section">
-          <h1>Contact</h1>
-          <div className="container">
-            <ContactMethod />
+          <div className="container text-center">
+            <h2><ContactMethod /></h2>
+            <ul className="socialmedia-icons large">
+              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+            </ul>
           </div>
         </section>
       </div>

@@ -1,7 +1,12 @@
-#newsletter{
-}
-
 .newsletter-confirmation{
   background-color: $red !important;
   padding: rem-calc(20) !important;
+}
+
+.newsletter-error{
+  position: absolute;
+  top: rem-calc(-50);
+  background-color: $alert-color;
+  padding: rem-calc(4 10);
+  font-weight: bold;
 }

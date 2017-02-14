@@ -46,6 +46,8 @@ class Index extends React.Component{
 
           {/* Video Player */}
           <VideoPlayer />
+
+          {/* Newsletter */}
           <Newsletter />
         </section>
 
@@ -55,7 +57,7 @@ class Index extends React.Component{
             <p className="lead">An undeniable energy kept pointing us towards a deeper sense of who we truly are. For lack of better words, it was a spiritual orgasm. This magic continues to be alive between us.</p>
             <p className="lead">Inspired by tantric communities, we feel called to share and create these experiences with you; to Elevate Sex.</p>
             <p className="lead">Welcome to the community.</p>
-            <h2><ContactMethod /></h2>
+            {/* <h2><ContactMethod /></h2> */}
           </div>
         </section>
       </div>

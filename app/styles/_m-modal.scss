@@ -16,7 +16,7 @@
     }
 
     @include breakpoint(large){
-      padding: rem-calc(40);
+      padding: rem-calc(30 40);
     }
 
     .modal-headline{

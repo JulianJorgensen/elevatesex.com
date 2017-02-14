@@ -16,3 +16,40 @@
     padding: 0;
   }
 }
+
+.page-marquee{
+  padding-top: rem-calc(400);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.socialmedia-icons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: rem-calc(20);
+  li{
+    display: inline-block;
+    margin-right: rem-calc(30);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &.large{
+    font-size: rem-calc(40);
+  }
+}
+
+#site-footer{
+  background-color: $black;
+  padding: rem-calc(60 0);
+  text-align: center;
+
+  .newsletter{
+    max-width: rem-calc(400);
+    margin: 0 auto;
+  }
+
+  @include content-color($white);
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from 'Header';
+import Footer from 'Footer';
 // import contentAPI from 'contentAPI';
 import DocumentMeta from 'react-document-meta';
 import myfont from 'KefaFont';
@@ -39,8 +40,9 @@ class Main extends React.Component{
     return (
       <StickyContainer className={`${window.md.mobile() ? 'is-mobile' : ''} ${window.md.mobile() == 'iPhone' ? 'is-iphone' : 'is-not-iphone'}`}>
         <DocumentMeta {...meta} />
-        <Header/>
+        <Header />
         {this.props.children}
+        <Footer />
       </StickyContainer>
     );
   }
