@@ -1,21 +1,35 @@
 #page-about{
   .marquee{
-    background-color: $red;
+    background-color: $black;
     .marquee-image{
       opacity: 0.5;
+      @include breakpoint(large){
+        background-position: center -120px;
+      }
     }
   }
   .bio{
     position: relative;
-    margin-top: rem-calc(-80);
 
+    &.bio-first{
+      margin-top: rem-calc(-80);
+    }
+
+    @include breakpoint(medium){
+      &, &.bio-first{
+        margin-top: rem-calc(-80);
+      }
+    }
     @include breakpoint(large){
-      margin-top: rem-calc(-60);
+      &, &.bio-first{
+        margin-top: rem-calc(-60);
+      }
     }
   }
   .bio-name{
     padding: rem-calc(10);
-    background-color: $white;
+    background-color: $red;
+    color: $white;
     margin-top: rem-calc(30);
 
     @include breakpoint(large){
