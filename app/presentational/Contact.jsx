@@ -12,7 +12,8 @@ class Contact extends React.Component{
 
   render() {
     return (
-      <div className="page page-marquee" style={{backgroundImage: 'url(/images/jocelyn_julian_elevatesex.jpg)'}}>
+      <div className="page">
+        <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/elevate-sand-written.jpg)'}}></div></div>
         <section className="section">
           <div className="container text-center">
             <h2><ContactMethod /></h2>

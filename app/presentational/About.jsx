@@ -13,7 +13,7 @@ class About extends React.Component{
   render() {
     return (
       <div>
-        <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/silhuette-elevatesex.jpg)'}}></div></div>
+        <div className="marquee"><div className="marquee-image" style={{backgroundImage: 'url(/images/about-julian-and-jocelyn-elevatesex.jpg)'}}></div></div>
         <section className="section">
           <div className="row">
             <div className="small-12 medium-6 columns">
