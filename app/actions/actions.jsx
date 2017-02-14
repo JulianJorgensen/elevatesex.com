@@ -45,10 +45,8 @@ export var playVideo = () => {
       category: 'Video',
       action: 'Video played'
     });
-
-    return {
-      type: 'PLAY_VIDEO'
-    };
+    
+    dispatch({ type: 'PLAY_VIDEO' });
   }
 };
 

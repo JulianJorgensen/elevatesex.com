@@ -16,8 +16,7 @@ class Footer extends React.Component {
     return (
       <footer id="site-footer">
         <div className="container">
-          <h2>Learn our secrets to great sex</h2>
-          <Newsletter buttonClass="large expanded" />
+          <Newsletter headline="Learn our secrets to great sex" buttonClass="large expanded" />
         </div>
       </footer>
     )

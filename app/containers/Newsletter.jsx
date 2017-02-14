@@ -74,7 +74,11 @@ class Newsletter extends React.Component{
   }
 
   render() {
-    let {dispatch, newsletter, buttonClass, buttonText} = this.props;
+    let {dispatch, newsletter, buttonClass, buttonText, headline} = this.props;
+
+    let renderHeadline = () => {
+      return (<h2>{headline}</h2>)
+    }
 
     let renderNewsletterForm = () => {
       if (newsletter.show) {
@@ -118,9 +122,10 @@ class Newsletter extends React.Component{
         }
       }
     }
-
     return (
       <div className="newsletter">
+        {headline ? renderHeadline() : ''}
+
         {/* newsletter signup form */}
         {renderNewsletterForm()}
 

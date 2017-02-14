@@ -47,8 +47,11 @@
   text-align: center;
 
   .newsletter{
-    max-width: rem-calc(340);
     margin: 0 auto;
+    .newsletter-signup-form{
+      max-width: rem-calc(340);
+      margin: 0 auto;
+    }
   }
 
   @include content-color($white);

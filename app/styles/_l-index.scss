@@ -6,7 +6,7 @@
   width: 100%;
   color: $white;
   padding-bottom: rem-calc(20);
-  overflow-x: hidden;
+  overflow: hidden;
 
   @include breakpoint(large){
     @include flex-align(center, middle);
