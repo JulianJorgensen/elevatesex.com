@@ -1,4 +1,11 @@
 // buttons
 .button{
   font-weight: bold;
+  font-family: 'KefaIIPro';
+
+  &.large{
+    @include breakpoint(small only){
+      font-size: 1.2rem;
+    }
+  }
 }

@@ -91,7 +91,7 @@ class Newsletter extends React.Component{
               <p><i>Enter your email now and<br />get our Pussy Meditation for free!</i></p>
               <form id="newsletter-signup-form" className="text-center" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
-                <input type="submit" value={buttonText ? buttonText : 'I want the secrets to great sex'} className="button large" />
+                <input type="submit" value={buttonText ? buttonText : 'I want secrets to great sex'} className="button large" />
                 <p className="margin-top-medium margin-none"><a onClick={this.handleCloseModal}>No thanks, I don't want better sex</a></p>
               </form>
 
@@ -107,7 +107,7 @@ class Newsletter extends React.Component{
             <div>
               <form className="newsletter-signup-form" onSubmit={this.handleSubmit.bind(this)} noValidate>
                 <input type="email" placeholder="Your Email" ref={(input) => { this.email = input; }} />
-                <input type="submit" value={buttonText ? buttonText : 'I want the secrets to great sex'} className={`button ${buttonClass ? buttonClass : ''}`} />
+                <input type="submit" value={buttonText ? buttonText : 'I want secrets to great sex'} className={`button ${buttonClass ? buttonClass : ''}`} />
               </form>
 
               <div className={`newsletter-error ${!this.state.subscribeError ? 'hide' : '' }`}>

@@ -1,0 +1,21 @@
+#page-about{
+  .bio{
+    position: relative;
+    margin-top: rem-calc(-60);
+  }
+  .bio-name{
+    padding: rem-calc(10);
+    background-color: $white;
+    margin-top: rem-calc(30);
+
+    @include breakpoint(large){
+      margin-top: 0;
+      display: inline-block;
+    }
+  }
+
+  .inner-content{
+    position: relative;
+    top: rem-calc(-40);
+  }
+}

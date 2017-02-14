@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga';
+
 export var routeLocationDidUpdate = (router) => {
   return {
     type: 'UPDATE_ROUTER',
@@ -38,9 +40,16 @@ export var videoIsLoading = (isLoading) => {
 };
 
 export var playVideo = () => {
-  return {
-    type: 'PLAY_VIDEO'
-  };
+  return (dispatch, getState) => {
+    ReactGA.event({
+      category: 'Video',
+      action: 'Video played'
+    });
+
+    return {
+      type: 'PLAY_VIDEO'
+    };
+  }
 };
 
 export var stopVideo = (player) => {
@@ -69,6 +78,10 @@ export var hideNewsletter = () => {
 
 export var newsletterSubscribe = () => {
   return (dispatch, getState) => {
+    ReactGA.event({
+      category: 'Newsletter',
+      action: 'Subscribed to newsletter'
+    });
     dispatch({ type: 'NEWSLETTER_SUBSCRIBED' });
     dispatch({ type: 'HIDE_NEWSLETTER' });
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, IndexLink} from 'react-router';
 // import ReactMarkdown from 'react-markdown';
 import DocumentMeta from 'react-document-meta';
 
@@ -57,6 +58,14 @@ class Index extends React.Component{
             <p className="lead">An undeniable energy kept pointing us towards a deeper sense of who we truly are. For lack of better words, it was a spiritual orgasm. This magic continues to be alive between us.</p>
             <p className="lead">Inspired by tantric communities, we feel called to share and create these experiences with you; to Elevate Sex.</p>
             <p className="lead">Welcome to the community.</p>
+            <div className="row">
+              <div className="small-12 medium-6">
+                <Link to="/for-singles" className="button large secondary">Read tips for Singles</Link>
+              </div>
+              <div className="small-12 medium-6 text-right">
+                <Link to="/for-couples" className="button large secondary">Read tips for Couples</Link>
+              </div>
+            </div>
             {/* <h2><ContactMethod /></h2> */}
           </div>
         </section>

@@ -17,7 +17,7 @@ class Footer extends React.Component {
       <footer id="site-footer">
         <div className="container">
           <h2>Learn our secrets to great sex</h2>
-          <Newsletter buttonClass="large" />
+          <Newsletter buttonClass="large expanded" />
         </div>
       </footer>
     )

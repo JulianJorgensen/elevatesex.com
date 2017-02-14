@@ -8,7 +8,10 @@ import DocumentMeta from 'react-document-meta';
 import Main from 'Main';
 import Index from 'Index';
 import About from 'About';
+import ForSingles from 'ForSingles';
+import ForCouples from 'ForCouples';
 import Contact from 'Contact';
+import NotFound from 'NotFound';
 
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-6241825-9'); // initialize Google Analytics
@@ -20,6 +23,7 @@ function logPageView(location) {
 
 browserHistory.listen((location) => {
   logPageView(location);
+  window.scrollTo(0, 0);
 });
 
 export default (
@@ -28,6 +32,9 @@ export default (
       <IndexRoute component={Index}/>
       <Route path="about" component={About}/>
       <Route path="contact" component={Contact}/>
+      <Route path="for-singles" component={ForSingles}/>
+      <Route path="for-couples" component={ForCouples}/>
+      <Route path="*" component={NotFound} />
     </Route>
   </Router>
 );
