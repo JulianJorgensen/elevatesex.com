@@ -32,20 +32,17 @@
     }
 
     .close-modal-icon{
-      display: none;
-      @include breakpoint(large){
-        background-color: $white;
-        position: absolute;
-        top: rem-calc(-15);
-        right: rem-calc(-15);
-        font-size: rem-calc(25);
-        color: $red;
-        padding: rem-calc(3);
-        width: rem-calc(35);
-        height: rem-calc(35);
-        border-radius: 50%;
-        cursor: pointer;
-      }
+      background-color: $white;
+      position: absolute;
+      top: rem-calc(-15);
+      right: rem-calc(-15);
+      font-size: rem-calc(20);
+      color: $red;
+      padding: rem-calc(3);
+      width: rem-calc(35);
+      height: rem-calc(35);
+      border-radius: 50%;
+      cursor: pointer;
     }
 
     @include breakpoint(large){
