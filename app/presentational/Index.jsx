@@ -57,10 +57,10 @@ class Index extends React.Component{
             <p className="lead">We are choosing to share with you the intimate journey of our tantric relationship. Where it’s all about elevating sex. That means improving your quality, depth and purpose of sex.</p>
             <p className="lead">Sex is the source of life - so in case you were wondering - it definitely affects your life. And it’s an untapped energy readily available to improve your relationships. It’s an experience you can use to live confidently, authentically and blissfully with yourself and those you love. Taking the power of sex from reproduction to transformation.</p>
             <div className="row margin-top-large">
-              <div className="small-12 medium-6">
+              <div className="small-12 medium-6 text-center large-text-left">
                 <Link to="/for-singles" className="button large secondary">Secrets for Singles</Link>
               </div>
-              <div className="small-12 medium-6 text-right">
+              <div className="small-12 medium-6 text-center large-text-right">
                 <Link to="/for-couples" className="button large secondary">Secrets for Couples</Link>
               </div>
             </div>

@@ -41,6 +41,13 @@
   }
 }
 
+.fb-like{
+  text-align: center;
+  padding: rem-calc(40 40);
+  background-color: $grey90;
+  width: 100%;
+}
+
 #site-footer{
   background-color: $black;
   padding: rem-calc(60 0);

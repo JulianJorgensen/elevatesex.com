@@ -23,8 +23,8 @@ class Contact extends React.Component{
           <div className="container text-center">
             <h2><ContactMethod /></h2>
             <ul className="socialmedia-icons large">
-              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/ElevateSex/" target="new"><i className="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/elevate.sex/" target="new"><i className="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </section>

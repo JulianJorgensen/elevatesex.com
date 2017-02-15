@@ -6,6 +6,7 @@ import DocumentMeta from 'react-document-meta';
 import myfont from 'KefaFont';
 import { StickyContainer, Sticky } from 'react-sticky';
 import MobileDetect from 'mobile-detect';
+import FacebookCta from 'FacebookCta';
 
 class Main extends React.Component{
   constructor(props){
@@ -42,6 +43,7 @@ class Main extends React.Component{
         <DocumentMeta {...meta} />
         <Header />
         {this.props.children}
+        <FacebookCta />
         <Footer />
       </StickyContainer>
     );
