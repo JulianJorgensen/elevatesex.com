@@ -49,10 +49,7 @@ class Main extends React.Component{
           'twitter:description': defaultDescription,
           'twitter:image': defaultImage
         },
-      },
-      auto: {
-        ograph: true
-      },
+      }
     };
 
     return (
