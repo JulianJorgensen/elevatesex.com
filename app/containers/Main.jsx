@@ -48,11 +48,14 @@ class Main extends React.Component{
         },
         property: {
           'og:title': defaultTitle,
+          'og:description': defaultDescription,
+          'og:url': defaultUrl,
           'og:image': defaultImage,
           'og:site_name': defaultSiteName,
           'og:type': 'website',
           'og:video': 'https://www.youtube.com/watch?v=E4jTC_4dlps',
-          'fb:admins': '772429297, 508840548'
+          'fb:admins': '772429297',
+          'fb:admins': '508840548'
         }
       }
     };
