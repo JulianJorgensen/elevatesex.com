@@ -24,18 +24,29 @@ class Main extends React.Component{
   }
 
   render() {
+    const defaultSiteName = 'ElevateSex';
+    const defaultTitle = 'Elevate your life through sex | ElevateSex.com'
+    const defaultDescription = 'Elevate the very essence of life - sex. Join Jocelyn and Julian on a tantric journey with powerful tips and insights.';
+    const defaultImage = 'https://www.elevatesex.com/images/elevatesex-social.jpg';
     const meta = {
-      title: 'Elevate your life through sex | ElevateSex.com',
-      description: 'Elevate the very essence of life - sex. Join Jocelyn and Julian on a tantric journey with powerful tips and insights.',
+      title: defaultTitle,
+      description: defaultDescription,
+      image: 'https://www.elevatesex.com/images/elevatesex-social.jpg',
       meta: {
         charset: 'utf-8',
         name: {
-          keywords: 'Sexuality, Tantra, Couples'
-        }
+          keywords: 'Sexuality, Tantra, Couples',
+          'rating': 'mature',
+          'og:image': defaultImage,
+          'og:site_name': defaultSiteName,
+          'og:type': 'website',
+          'author': 'Jocelyn Lee and Julian Jorgensen',
+          'copyright': 'Jocelyn Lee and Julian Jorgensen 2017'
+        },
       },
       auto: {
         ograph: true
-      }
+      },
     };
 
     return (
