@@ -37,11 +37,6 @@ class Main extends React.Component{
         name: {
           keywords: 'Sexuality, Tantra, Couples',
           'rating': 'mature',
-          'og:title': defaultTitle,
-          'og:image': defaultImage,
-          'og:site_name': defaultSiteName,
-          'og:type': 'website',
-          'fb:admins': '772429297, 508840548',
           'author': 'Jocelyn Lee and Julian Jorgensen',
           'copyright': 'Jocelyn Lee and Julian Jorgensen 2017',
           'twitter:card': 'summary',
@@ -49,6 +44,13 @@ class Main extends React.Component{
           'twitter:description': defaultDescription,
           'twitter:image': defaultImage
         },
+        property: {
+          'og:title': defaultTitle,
+          'og:image': defaultImage,
+          'og:site_name': defaultSiteName,
+          'og:type': 'website',
+          'fb:admins': '772429297, 508840548'
+        }
       }
     };
 
