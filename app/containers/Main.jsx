@@ -27,11 +27,11 @@ class Main extends React.Component{
     const defaultSiteName = 'ElevateSex';
     const defaultTitle = 'Elevate your life through sex | ElevateSex.com'
     const defaultDescription = 'Elevate the very essence of life - sex. Join Jocelyn and Julian on a tantric journey with powerful tips and insights.';
-    const defaultImage = 'https://www.elevatesex.com/images/elevatesex-social.jpg';
+    const defaultImage = 'https://elevatesex.com/images/elevatesex-social.jpg';
     const meta = {
       title: defaultTitle,
       description: defaultDescription,
-      image: 'https://www.elevatesex.com/images/elevatesex-social.jpg',
+      image: defaultImage,
       meta: {
         charset: 'utf-8',
         name: {
@@ -49,6 +49,7 @@ class Main extends React.Component{
           'og:image': defaultImage,
           'og:site_name': defaultSiteName,
           'og:type': 'website',
+          'og:video': 'https://www.youtube.com/watch?v=E4jTC_4dlps',
           'fb:admins': '772429297, 508840548'
         }
       }
