@@ -28,9 +28,11 @@ class Main extends React.Component{
     const defaultTitle = 'Elevate your life through sex | ElevateSex.com'
     const defaultDescription = 'Elevate the very essence of life - sex. Join Jocelyn and Julian on a tantric journey with powerful tips and insights.';
     const defaultImage = 'https://elevatesex.com/images/elevatesex-social.jpg';
+    const defaultUrl = 'https://elevatesex.com';
     const meta = {
       title: defaultTitle,
       description: defaultDescription,
+      canonical: defaultUrl,
       image: defaultImage,
       meta: {
         charset: 'utf-8',
