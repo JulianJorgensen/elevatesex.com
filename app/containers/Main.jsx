@@ -37,6 +37,7 @@ class Main extends React.Component{
         name: {
           keywords: 'Sexuality, Tantra, Couples',
           'rating': 'mature',
+          'og:title': defaultTitle,
           'og:image': defaultImage,
           'og:site_name': defaultSiteName,
           'og:type': 'website',
