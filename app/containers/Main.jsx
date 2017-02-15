@@ -40,8 +40,13 @@ class Main extends React.Component{
           'og:image': defaultImage,
           'og:site_name': defaultSiteName,
           'og:type': 'website',
+          'fb:admins': '772429297, 508840548',
           'author': 'Jocelyn Lee and Julian Jorgensen',
-          'copyright': 'Jocelyn Lee and Julian Jorgensen 2017'
+          'copyright': 'Jocelyn Lee and Julian Jorgensen 2017',
+          'twitter:card': 'summary',
+          'twitter:title': defaultTitle,
+          'twitter:description': defaultDescription,
+          'twitter:image': defaultImage
         },
       },
       auto: {
