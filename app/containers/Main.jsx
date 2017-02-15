@@ -39,7 +39,7 @@ class Main extends React.Component{
         name: {
           keywords: 'Sexuality, Tantra, Couples',
           'rating': 'mature',
-          'author': 'Jocelyn Lee and Julian Jorgensen',
+          'author': 'Jocelyn and Julian',
           'copyright': 'Jocelyn Lee and Julian Jorgensen 2017',
           'twitter:card': 'summary',
           'twitter:title': defaultTitle,
