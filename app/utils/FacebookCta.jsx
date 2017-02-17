@@ -1,4 +1,5 @@
 import React from 'react';
+import FacebookProvider, {Like} from 'react-facebook';
 
 class FacebookCta extends React.Component{
   constructor(){
@@ -7,7 +8,9 @@ class FacebookCta extends React.Component{
 
   render() {
     return (
-      <div className="fb-like" data-href="https://elevatesex.com" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+      <FacebookProvider appID="211784975956002">
+        <Like href="http://elevatesex.com" colorScheme="dark" layout="button" share />
+      </FacebookProvider>
     )
   }
 }

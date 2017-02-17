@@ -1027,6 +1027,10 @@ camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
+can-use-dom@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/can-use-dom/-/can-use-dom-0.1.0.tgz#22cc4a34a0abc43950f42c6411024a3f6366b45a"
+
 caniuse-api@^1.5.2:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-1.5.3.tgz#5018e674b51c393e4d50614275dc017e27c4a2a2"
@@ -1272,6 +1276,10 @@ cookie@0.3.1:
 cookiejar@2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/cookiejar/-/cookiejar-2.0.6.tgz#0abf356ad00d1c5a219d88d44518046dd026acfe"
+
+core-decorators@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/core-decorators/-/core-decorators-0.15.0.tgz#e5a58ff7ed48b9d2ef42262fd9550cddde18a819"
 
 core-js@^1.0.0, core-js@^1.2.0:
   version "1.2.7"
@@ -2533,6 +2541,10 @@ karma@^1.4.0:
     tmp "0.0.28"
     useragent "^2.1.10"
 
+keymirror@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/keymirror/-/keymirror-0.1.1.tgz#918889ea13f8d0a42e7c557250eee713adc95c35"
+
 kind-of@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.1.0.tgz#475d698a5e49ff5e53d14e3e732429dc8bf4cf47"
@@ -3530,7 +3542,7 @@ qs@6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.1.tgz#ce03c5ff0935bc1d9d69a9f14cbd18e568d67625"
 
-qs@~6.3.0:
+qs@^6.3.0, qs@~6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
@@ -3598,6 +3610,16 @@ react-dom@^15.4.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
+react-facebook@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-facebook/-/react-facebook-2.2.5.tgz#1c2d0d0f73366eeb03c1dad0a4c0cde136358a93"
+  dependencies:
+    can-use-dom "^0.1.0"
+    core-decorators "^0.15.0"
+    keymirror "^0.1.1"
+    qs "^6.3.0"
+    react-spinner-children "^1.0.5"
+
 react-ga@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.1.2.tgz#7af206c5e8761d7176e15773fe826acdb70ac653"
@@ -3646,6 +3668,12 @@ react-side-effect@^1.0.1:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^0.2.2"
+
+react-spinner-children@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-spinner-children/-/react-spinner-children-1.0.5.tgz#22326add38b88581681d2b775d02170b81124f3a"
+  dependencies:
+    spin.js "^2.3.2"
 
 react-sticky@^5.0.5:
   version "5.0.5"
@@ -4086,6 +4114,10 @@ spdx-expression-parse@~1.0.0:
 spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
+
+spin.js@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/spin.js/-/spin.js-2.3.2.tgz#6caa56d520673450fd5cfbc6971e6d0772c37a1a"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
