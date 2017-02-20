@@ -84,8 +84,8 @@ class Newsletter extends React.Component{
       if (newsletter.show) {
         if (newsletter.showInModal) {
           return (
-            <ReactModal isOpen={true} closeTimeoutMS={200} className="ReactModal__Content" onRequestClose={this.handleCloseModal} contentLabel="test">
-              <h3 className="modal-headline">Free valentines gift!</h3>
+            <ReactModal isOpen={true} closeTimeoutMS={200} className="ReactModal__Content" onRequestClose={this.handleCloseModal} contentLabel="newsletter">
+              <h3 className="modal-headline">Get our 10 Tips for Great Sex!</h3>
               <ul>
                 <li>Deepen your relationship(s)</li>
                 <li>Expand your awareness</li>
