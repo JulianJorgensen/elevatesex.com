@@ -49,7 +49,7 @@ class About extends React.Component{
                   <p>I’m also interested in Artificial Intelligence. My next personal project will be a spiritual growth AI based on a questionnaire.</p>
                   <p>With love and sincerity,<br />
                   Julian</p>
-                  <small>I'm open to collaborations if it serves a higher purpose. For more info visit my website: <a href='http://www.JulianJorgensen.com' target='new'>JulianJorgensen.com</a></small>
+                  <small>I'm open to collaborations if it serves a higher purpose. For more info visit my website <a href='http://www.JulianJorgensen.com' target='new'>JulianJorgensen.com</a></small>
                 </ReadMore>
               </div>
             </div>
